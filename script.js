@@ -20,8 +20,7 @@ function fetchFile(url) {
         URL.revokeObjectURL(tempUrl);
         aTag.remove();
     }).catch((error) => {
-        alert("Failed to download file!");
+        alert("Failed to download file!"+"\n"+error);
         downloadBtn.innerText = "Download File";
-        console.log(error);
     });
 }
